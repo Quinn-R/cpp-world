@@ -14,7 +14,7 @@ int main() {
     out.getString();
     //std::cout << out.getLineCounter();
 
-    out.println("Hello there, I am a sentance of more than 10 letters. I will test if the output and readtermsize class works correctly.");
+    out.println("Hello there, I am a sentance of more than 10 letters. I will test if the output and readtermsize class works correctly.Hello there, I am a sentance of more than 10 letters. I will test if the output and readtermsize class works correctly.");
     out.getString();
     //std::cout << out.getLineCounter();
 
@@ -24,3 +24,4 @@ int main() {
     
     return 0;
 }
+

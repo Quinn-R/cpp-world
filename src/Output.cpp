@@ -4,10 +4,11 @@
 Output::Output(int x, int y) {
     this -> x = x;
     this -> y = y;
+    lineCounter = 0;
 }
 
 void Output::println(std::string out) {
-    lineCounter = 1;
+    int lineCounter = 1;
     
     std::cout << "\n";
     
@@ -15,30 +16,27 @@ void Output::println(std::string out) {
         if(i % x != 0 || i == 0) {
             std::cout << out[i];
         } else {
-            
             std::cout << "\n";
             std::cout << out[i];
             lineCounter++;
         }
     }
     
-    /*std::cout << "test1: " << lineCounter << std::endl;
-    std::cout << "test2: " << this->lineCounter << std::endl;
-
-    this->lineCounter = lineCounter;*/
+    this->lineCounter = lineCounter;
 }
 
 std::string Output::getString() {
     int lineEnter = 1;
 
     if(lineCounter < y) {
-        lineEnter = y - lineCounter;
+        lineEnter = y - lineCounter/* - 1*/;
     }
     
     for(int i = 0; i < lineEnter; i++) {
         std::cout << "\n";
     }
 
+    //tmp = std::cin.get();
     std::cin >> tmp;
 
     return tmp;
