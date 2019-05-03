@@ -1,3 +1,3 @@
-#cd bin
-./app.exe
-#cd ../
+cd bin
+./app
+cd ../

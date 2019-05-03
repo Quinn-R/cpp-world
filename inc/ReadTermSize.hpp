@@ -12,7 +12,7 @@ class ReadTermSize {
 
     public:
 
-    void readFile();
+    int readFile();
 
     int getX();
     int getY();

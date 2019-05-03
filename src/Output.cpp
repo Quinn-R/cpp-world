@@ -25,11 +25,17 @@ void Output::println(std::string out) {
     this->lineCounter = lineCounter;
 }
 
+void Output::endOfProgram() {
+    for(int i = 0; i < y; i++) {
+        std::cout << std::endl;
+    }
+}
+
 std::string Output::getString() {
     int lineEnter = 1;
 
     if(lineCounter < y) {
-        lineEnter = y - lineCounter/* - 1*/;
+        lineEnter = y - lineCounter;
     }
     
     for(int i = 0; i < lineEnter; i++) {

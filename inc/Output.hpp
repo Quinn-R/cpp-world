@@ -14,6 +14,7 @@ class Output {
     Output(int x, int y);
 
     void println(std::string out);
+    void endOfProgram();
     std::string getString();
     int getLineCounter();
 
